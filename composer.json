@@ -1,0 +1,28 @@
+{
+    "name": "cosmonova-rnd/auth",
+    "description": "Simple OAuth 2 library for Symfony projects",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.5.0",
+    "authors": [
+        {
+            "name": "Aleksandr Besedin",
+            "email": "bs@cosmonova.net"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "alpha",
+    "require": {
+        "symfony/framework-bundle": "^4.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/console": "^4.0",
+        "symfony/orm-pack": "^1.0",
+        "symfony/security": "^4.0",
+        "cosmonova-rnd/jwt": "~0.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CosmonovaRnD\\Auth\\": "src/"
+        }
+    }
+}
