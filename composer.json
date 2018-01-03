@@ -3,7 +3,7 @@
     "description": "Simple OAuth 2 library for Symfony projects",
     "type": "library",
     "license": "MIT",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "authors": [
         {
             "name": "Aleksandr Besedin",
@@ -17,7 +17,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "symfony/console": "^4.0",
         "symfony/orm-pack": "^1.0",
-        "symfony/security": "^4.0",
+        "symfony/security-bundle": "^4.0",
         "cosmonova-rnd/jwt": "~0.7"
     },
     "autoload": {
