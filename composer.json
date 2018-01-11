@@ -18,7 +18,8 @@
         "symfony/console": "^4.0",
         "symfony/orm-pack": "^1.0",
         "symfony/security-bundle": "^4.0",
-        "cosmonova-rnd/jwt": "~0.7"
+        "cosmonova-rnd/jwt": "^0.7",
+        "cosmonova-rnd/auth": "^0.7"
     },
     "autoload": {
         "psr-4": {
