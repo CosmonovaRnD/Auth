@@ -69,7 +69,7 @@ security:
 
 ```yml
 access_control:
-	- { path: ^/auth, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/auth, roles: IS_AUTHENTICATED_ANONYMOUSLY }
     - { path: ^/, roles: IS_AUTHENTICATED_FULLY }
 ```
 
