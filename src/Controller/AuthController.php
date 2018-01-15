@@ -32,20 +32,27 @@ class AuthController extends Controller
      * @var string
      */
     private $clientId;
+    /**
+     * @var string
+     */
+    private $redirectPathName;
 
     /**
      * AuthController constructor.
      *
      * @param string $authUri
      * @param string $clientId
+     * @param string $redirectPathName
      */
     public function __construct(
         string $authUri,
-        string $clientId
+        string $clientId,
+        string $redirectPathName = 'home'
     ) {
 
-        $this->authUri  = $authUri;
-        $this->clientId = $clientId;
+        $this->authUri          = $authUri;
+        $this->clientId         = $clientId;
+        $this->redirectPathName = $redirectPathName;
     }
 
     /**
@@ -77,7 +84,7 @@ class AuthController extends Controller
             $user = $persister->persist($tokenData);
             $this->authenticate($user, $session, $tokenStorage);
 
-            return $this->redirect('/');
+            return $this->redirectToRoute($this->redirectPathName);
         }
 
         $uri = $this->authUri . '?' .
